@@ -1,0 +1,30 @@
+<!-- Envoyer l'En-tête au navigateur -->
+/* ------------ *//* ------------ *//* ------------ *//* ------------ *//* ------------ */
+
+
+<!-- Pour envoyer une En-tête il y a une méthode qui s'appel : -->
+<!-- Methode Header  -->
+<!-- --------------- -->
+<!-- Elle permet de choisir 
+une En-tête (donc on met la clé de l'En-tête) 
+et
+La valeur à renvoyer -->
+
+<!-- C'est sympas pour les En-tête basique mais dans les cas des coockies, l'En-tête est un peu compliqué puisqu'il faut mettre la date d'expiration etc-->
+
+
+/* ------------ *//* ------------ *//* ------------ *//* ------------ *//* ------------ */
+<!-- Methode setcookie -->
+<!-- ----------------- -->
+<!-- Cette méthode est un raccourcis qui va permettre de renvoyer l'En-tête correspondant à la définition de cookie-->
+
+<!-- Au niveau de sa signature :  -->
+1er parametre : la clé
+2em             valeur ( chaine de caractere )
+etc             choisir la date d'expiration
+                le chemin
+                le nom de domaine 
+                Si l'on veut que le cookie soit sécurisé ou pas (est-ce qu'il peut être transmi en http) 
+                httponly permet de spécifié si le cookie doit être accepté en js ou pas.
+
+                

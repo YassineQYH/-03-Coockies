@@ -1,0 +1,34 @@
+/* LES COOKIES */
+/* ------------ */
+
+// Commencons par ouvrir l'inspecteur - onglet réseau d'une page internet ( google ).
+
+/* ------------ *//* ------------ *//* ------------ *//* ------------ *//* ------------ */
+/* Partie réponse */
+// Allons sur le 1er état 200 que vous trouverez.
+// Si je regarde les réponses faite par google, je trouve :: set-cookie
+// ça ressemble toujours à la même chose :
+
+/* 1P_JAR=2020-03-17-15; expires=Thu, 16-Apr-2020 15:18:48 GMT; path=/; domain=.google.fr; Secure; SameSite=none */
+// 1P_JAR= = une clé 
+// 2020-03-17-15 = sa valeur
+// expires=Thu, 16-Apr-2020 15:18:48 GMT = une date d'expiration
+// path=/ = un chemin
+// domain=.google.fr = un nom de domaine
+
+// Ces En-tête sont renvoyer par google et permet de dire au navigateur :
+// Il faut que tu définisse des coockies qui ont ces clés la et ces valeurs la
+// Automatiquement, le navigateur va comprendre ces En-tête la et va sauvegarder ces information.
+
+/* ------------ *//* ------------ *//* ------------ *//* ------------ *//* ------------ */
+/* Partie Requête que fait le navigateur  */
+
+// Toujours dans l'En_tête mais cette fois partie requête et non pas réponse.
+
+// Sur la ligne :: Cookie, 
+// à chaque nouvelle requête, le navigateur va envoyer les informations qu'il a sauvegardé dans les cookies au serveur.
+// Le serveur va pouvoir interpreté les choses et dire,
+// La on voit que c'est ce NID donc c'est le même utilisateur que précédemment et je peux lui afficher des choses un peu différemment.
+// Cookie = 1P_JAR=2020-3-17-15; NID=200=iVL-F5NZuM9dty5vcFAJrhNJgJoE6FOY47cz8z_YYx-fXH68SYYmD1RdIdO0_hC-2jcHoNJg1VhAe88l35jx1diyIgWIJOI6yrb4pTx4WQHKzBMGu6uLox_TaQTo0U_9aMn4U_pEUWqsu5mC5Uo6geXCmTU_Xj3nKw0JzQe0TN8; CONSENT=YES+FR.fr+20160821-19-0; OGPC=19016257-1:; OGP=-19016257:
+
+/* ------------ *//* ------------ *//* ------------ *//* ------------ *//* ------------ */
